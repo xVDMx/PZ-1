@@ -145,7 +145,7 @@ public class Main
 
         HashSet<String> hash = new HashSet<>();
         hash.add("Коноверская");
-        hash.add("Евсюкова");
+        hash.add("Гончаренко");
         hash.add("Королович");
         hash.add("Ильге");
         hash.add("Гаевой");
@@ -176,7 +176,7 @@ public class Main
 
         TreeSet<String> tree = new TreeSet<>();
         tree.add("Коноверская");
-        tree.add("Евсюкова");
+        tree.add("Гончаренко");
         tree.add("Королович");
         tree.add("Ильге");
         tree.add("Гаевой");
@@ -206,6 +206,26 @@ public class Main
             }
             break;
         }
+HashSet<Student> student = new HashSet<>();
+        student.add(new Student("Руслан", "Овчаренко","ЕСТМ-18-1",3));
+        student.add(new Student("Алёна", "Гончаренко","ЕСТМ-18-1",3));
+        student.add(new Student("Богдан", "Топчий","ЕСТМ-18-1",3));
+        student.add(new Student("Вадим", "Трегубов","ЕСТМ-18-1",3));
+
+        System.out.println("Студенты: " + student);
+
+        System.out.println("Есть ли Вадим: " + student.contains(new Student("Вадим", "Трегубов","ЕСТМ-18-1",3)));
+        System.out.println("Есть ли Билли: " +  student.contains(new Student("Билли", "Джин","ЕСТМ-19-1",2)));
+
+
+        Set<Student> treestudent = new TreeSet<>();
+        student.add(new Student("Руслан", "Овчаренко","ЕСТМ-18-1",3));
+        student.add(new Student("Алёна", "Гончаренко","ЕСТМ-18-1",3));
+        student.add(new Student("Богдан", "Топчий","ЕСТМ-18-1",3));
+        student.add(new Student("Вадим", "Трегубов","ЕСТМ-18-1",3));
+    }
+}
+
     }
 }
 
